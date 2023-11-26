@@ -1,5 +1,10 @@
 # Paper-3-Implementation-Ubiquitous-Computing
 
+---
+
+## Implementation of Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference
+
+---
 ## Setting Up the Environment
 
 1. **Login to HPC:**
