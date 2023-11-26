@@ -3,11 +3,14 @@
 ## Setting Up the Environment
 
 1. **Login to HPC:**
-   - Use your HPC credentials to log in.
+   - Use your HPC credentials to log in using the command.
+     ```bash
+     ssh <username>@172.16.40.30
+     ```
    - Navigate to the home directory.
 
 2. **Load Conda Environment:**
-   - Load the conda environment with the required libraries.
+   - Load the conda environment with the pre-downloaded libraries.
      ```bash
      module load conda=python/3.7
      ```
@@ -15,7 +18,7 @@
 3. **Create a New Conda Environment:**
    - Run the following command to create a new conda environment named `test_env`.
      ```bash
-     conda create --name test_env python==3.7
+     conda create --name test_env python=3.7
      ```
 
 4. **Activate the Virtual Environment:**
@@ -32,7 +35,7 @@
      git clone https://github.com/ashish7515/Paper-3-Implementation-Ubiquitous-Computing.git
      ```
 
-   This will copy the `paper_implementation.py` and the project paper PDF along with the required files to your home directory.
+   This will copy the necessary python files and the project paper PDF along with the required files to create a job in your home directory.
 
 ## Install Dependencies
 
@@ -54,13 +57,14 @@
 ## Job Submission
 
 8. **Update Job Description (Optional):**
-   - The default job description is present in the `slrum.sh` file.
+   - The default job description is present in the `slrum_file.sh` file.
    - You can update or change anything in this file based on your requirements.
+   - 
 
 9. **Submit the Job:**
    - Submit the job using the following command.
      ```bash
-     sbatch slrum.sh
+     sbatch slrum_file.sh
      ```
 
    This will create and submit the job to the HPC, and it will start executing over the compute nodes.
