@@ -30,7 +30,7 @@
 ## Clone the Repository
 
 5. **Clone the GitHub Repository:**
-   - Clone the project repository into the current directory.
+   - Clone the project repository into the current home directory.
      ```bash
      git clone https://github.com/ashish7515/Paper-3-Implementation-Ubiquitous-Computing.git
      ```
@@ -59,7 +59,6 @@
 8. **Update Job Description (Optional):**
    - The default job description is present in the `slrum_file.sh` file.
    - You can update or change anything in this file based on your requirements.
-   - 
 
 9. **Submit the Job:**
    - Submit the job using the following command.
@@ -70,3 +69,26 @@
    This will create and submit the job to the HPC, and it will start executing over the compute nodes.
 
    The output of the job will be saved in `dl_out`, and any errors will be saved in `dl_err`.
+
+
+## Checking Job Status and Outputs
+
+10. **Check Job Status:**
+    - You can check the status of your job using the following command:
+      ```bash
+      scontrol show job <job_ID>
+      ```
+      Replace `<job_ID>` with the actual job ID (without angular brackets).
+
+11. **Check Outputs:**
+    - To check the outputs, you can use tools like `vim`. For example:
+      ```bash
+      vim dl_out
+      ```
+      This allows you to view the output file.
+
+Feel free to adjust any details or wording to better suit your specific instructions or context.
+
+
+
+
