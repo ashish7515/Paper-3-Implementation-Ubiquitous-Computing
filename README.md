@@ -21,9 +21,10 @@
    - Navigate to the home directory.
 
 2. **Load Conda Environment:**
-   - Load the conda environment with the pre-downloaded libraries.
+   - Load the conda environment with the pre-downloaded libraries because Conda environment has been installed with most of the popular python
+packages
      ```bash
-     module load conda=python/3.7
+     module load conda-python/3.7
      ```
 
 3. **Create a New Conda Environment:**
@@ -78,6 +79,7 @@
    - You can update or change anything in this file based on your requirements.
 
 10. **Submit the Job:**
+   - To place a job on the compute nodes, we write a bash script (slrum_file) and then submit it. ParamShivay can then smartly handle the resource requirements based on availability.
    - Submit the job using the following command.
      ```bash
      sbatch slrum_file.sh
