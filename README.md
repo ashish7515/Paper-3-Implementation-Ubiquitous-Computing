@@ -45,12 +45,18 @@
      ```bash
      git clone https://github.com/ashish7515/Paper-3-Implementation-Ubiquitous-Computing.git
      ```
+6. **Add SSH Key to Git (If you encounter errors):**
+   - If you encounter any Git-related errors, it might be due to authentication issues.
+   - Add your SSH key to your Git credentials using the following steps:
+     - Generate an SSH key if you haven't already: [GitHub SSH Key Setup Guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+     - Add your SSH key to your GitHub account: [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+     - Retry the `git clone` command.
 
    This will copy the necessary python files and the project paper PDF along with the required files to create a job in your home directory.
 
 ## Install Dependencies
 
-6. **Generate Requirements.txt:**
+7. **Generate Requirements.txt:**
    - Generate the `requirements.txt` file using pipreqs.
      ```bash
      pip install pipreqs
@@ -59,7 +65,7 @@
 
    This creates a `requirements.txt` file containing all the required packages.
 
-7. **Install Dependencies:**
+8. **Install Dependencies:**
    - Install the packages listed in `requirements.txt`.
      ```bash
      pip install -r requirements.txt
@@ -67,11 +73,11 @@
 
 ## Job Submission
 
-8. **Update Job Description (Optional):**
+9. **Update Job Description (Optional):**
    - The default job description is present in the `slrum_file.sh` file.
    - You can update or change anything in this file based on your requirements.
 
-9. **Submit the Job:**
+10. **Submit the Job:**
    - Submit the job using the following command.
      ```bash
      sbatch slrum_file.sh
@@ -84,14 +90,14 @@
 
 ## Checking Job Status and Outputs
 
-10. **Check Job Status:**
+11. **Check Job Status:**
     - You can check the status of your job using the following command:
       ```bash
       scontrol show job <job_ID>
       ```
       Replace `<job_ID>` with the actual job ID (without angular brackets).
 
-11. **Check Outputs:**
+12. **Check Outputs:**
     - To check the outputs, you can use tools like `vim`. For example:
       ```bash
       vim dl_out
