@@ -4,6 +4,12 @@
 
 ## Implementation of Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference
 
+** Group Number - 25
+- Ashish Kumar
+- M R Akshit
+- Harshit Swarnkar
+
+   
 ---
 ## Setting Up the Environment
 
